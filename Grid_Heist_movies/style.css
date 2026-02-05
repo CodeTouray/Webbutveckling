@@ -1,0 +1,44 @@
+@charset "UTF-8" ;
+
+body{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:100px 100px 100px;
+    grid-template-areas: 
+    "Header Header"
+    "Sidebar Content"
+    "Sidebar Footer"
+    ;
+}
+
+div{
+    background: rgb(246, 167, 106);
+    margin: 2px;
+    border-radius: 10px;
+    border-color: rgb(243, 123, 53);
+    border-style: solid;
+    color: rgb(226, 89, 20);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align:center;
+}
+
+#h{
+    grid-area: Header ;
+
+}
+
+#c{
+    grid-area: Content ;
+ 
+}
+
+#s{
+    grid-area: Sidebar ;
+
+}
+
+#f{
+    grid-area: Footer ;
+
+}

@@ -1,0 +1,71 @@
+@charset "UTF-8" ;
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: orange;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;   
+}
+
+header{
+
+background: rgb(246, 42, 6);
+color: white;
+padding: px;
+margin: 0px;
+
+}
+
+
+#p1{
+    width:90% ;
+    margin: 10px;
+    font-weight: bold;
+    display: flex;
+    justify-self: center;
+}
+
+h1{
+    font-size: 35px;
+    margin-left: 10px;
+}
+
+h2{
+    font-size: 18px;
+    margin-left: 10px;
+    margin-bottom: 8px;
+}
+
+article{
+    background-color: white;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+img{
+
+    width:90% ;
+    display: flex;
+    justify-self: center;
+}
+
+ul{
+
+}
+
+ol{
+
+}
+
+#ingredienser{
+
+}
+
+#gör_såhär{
+
+}
+
+footer{
+
+}

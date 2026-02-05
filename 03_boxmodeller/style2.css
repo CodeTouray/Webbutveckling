@@ -1,0 +1,13 @@
+body{
+    margin:0px;
+}
+
+header{
+    background:url("images/Coffee_man.png");
+    padding:100px;
+    background-size:cover;
+}
+
+h1{
+    color: blanchedalmond;
+}

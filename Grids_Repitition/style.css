@@ -1,0 +1,44 @@
+@charset "UTF-8" ;
+
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ; 
+    grid-template-areas: 
+    "A B B"
+    "A . C"
+    "D D D"
+    ". E ."
+   ;
+
+}
+
+div{
+    background: brown;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    margin: 3px;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 40px;
+}
+
+#a{
+    grid-area: A ;
+}
+
+#b{
+    grid-area: B ;
+}
+
+#c{
+    grid-area: C ;
+}
+
+#d{
+    grid-area: D ;
+}
+
+#e{
+    grid-area: E ;
+}

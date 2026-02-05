@@ -1,0 +1,110 @@
+@charset "UTF-8" ;
+
+body{
+margin: 100px;
+margin-top: 20px;
+}
+
+#Grid_container{
+    height: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "A B C"
+    "D . E"
+    "F G H"
+    "I text text"
+    "J text text"
+    ;
+}
+
+div{
+    background:red;
+    height: 200px;
+}
+
+
+#a{
+    grid-area: A;
+    background: url(Pictures/a.jpg);
+    background-size: cover;
+    font-size: 0px;
+}
+
+#b{
+    grid-area: B;
+    background: url(Pictures/b.webp);
+    background-size: cover;
+    font-size: 0px;
+}
+
+#c{
+    grid-area: C;
+    background: url(Pictures/c.jpg);
+    background-size: cover;
+    font-size: 0px;
+    border-top-right-radius: 40px;
+}
+
+#d{
+    grid-area: D;
+    background: url(Pictures/d.jpg);
+    background-size: cover;
+    font-size: 0px;
+}
+
+#e{
+    grid-area: E;
+    background: url(Pictures/e.jpg);
+    background-size: cover;
+    font-size: 0px;
+}
+
+#f{
+    grid-area: F;
+    background: url(Pictures/f.jpg);
+    background-size: cover;
+    font-size: 0px;
+}
+
+#g{
+    grid-area: G;
+    background: url(Pictures/g.webp);
+    background-size: cover;
+    font-size: 0px;
+}
+
+#h{
+    grid-area: H;
+    background: url(Pictures/h.jpg);
+    background-size: cover;
+    font-size: 0px;
+    border-bottom-right-radius: 40px;
+}
+
+#i{
+    grid-area: I;
+    background: url(Pictures/i.jpg);
+    background-size: cover;
+    font-size: 0px;
+}
+
+#j{
+    grid-area: J;
+    background: url(Pictures/j.jpg);
+    background-size: cover;
+    font-size: 0px;
+}
+
+#text{
+    grid-area: text;
+    background-size: cover;
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    font-family: cursive;
+    font-style: italic;
+    background-color: white;
+}

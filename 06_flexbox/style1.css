@@ -1,0 +1,12 @@
+article {
+    display: flex;
+    margin: 50px;
+}
+
+section{
+    flex: 1;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: aquamarine;
+    margin: 20px;
+}
