@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #222;
+    padding: 1rem;
+    color: white;
+    position: relative;
+  }
+  
+  .logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .menu {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .menu a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .menu a:hover {
+    text-decoration: underline;
+  }
+  
+  .menu-toggle {
+    display: none;
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* ===== Mobil ===== */
+  @media (max-width: 768px) {
+  
+    .menu-toggle {
+      display: block;
+    }
+  
+    .menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: #333;
+      flex-direction: column;
+      overflow: hidden;
+  
+      max-height: 0;
+      transition: max-height 0.3s ease;
+    }
+  
+    .menu li {
+      text-align: center;
+      padding: 1rem 0;
+    }
+  
+    .menu.active {
+      max-height: 300px; /* justera efter behov */
+    }
+  }
+
+  main{
+    padding: 1rem;
+    color: white;
+    min-height: 100vh;
+    background: url(bg.webp);
+    background-size: cover;
+}

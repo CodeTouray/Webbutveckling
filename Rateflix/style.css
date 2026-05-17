@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+  color: white;
+  background-color: black;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.search-box input {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  width: 220px;
+  font-family: Montserrat, sans-serif;
+}
+
+h1 {
+  color: #E50914;
+  text-transform: uppercase;
+  font-size: 48px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.menu {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  padding: 12px 18px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.menu a:hover {
+  background-color: #E50914;
+  transform: scale(1.05);
+}
+
+
+.sitebg {
+  height: 60vh;
+  background: linear-gradient(to top, black, transparent), url('pictures/sitebg.jpg') center/cover;
+  display: flex;
+  align-items: flex-end;
+  padding: 50px 80px;
+}
+
+.sitebg-content h2 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  max-width: 500px;
+  opacity: 0.8;
+  line-height: 1.6;
+}
+
+
+article {
+  padding: 40px 80px;
+}
+
+.section-title {
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+.series,
+.movies {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  list-style: none;
+  margin-bottom: 50px;
+}
+
+.card {
+  background: #111;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.serie_titles {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.title_info {
+  color: #E50914;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.rating {
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  opacity: 0.7;
+}
+
+
+@media (max-width: 768px) {
+  nav,
+  article,
+  .hero {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  .hero-content h2 {
+    font-size: 28px;
+  }
+}
