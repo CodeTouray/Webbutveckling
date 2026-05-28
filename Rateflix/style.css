@@ -4,105 +4,122 @@
   box-sizing: border-box;
 }
 
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   font-family: Montserrat, sans-serif;
   color: white;
   background-color: black;
 }
 
+/* NAV FIX (MAIN FIX) */
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 80px;
+  flex-wrap: wrap;
+
+  width: 100%;
+  max-width: 100%;
+
+  padding: 20px 16px;
   border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 
+/* LOGO */
+h1 {
+  color: #E50914;
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  flex-shrink: 0;
+}
+
+/* SEARCH */
 .search-box input {
   padding: 10px 14px;
   border-radius: 8px;
   border: none;
   outline: none;
   width: 220px;
-  font-family: Montserrat, sans-serif;
+  max-width: 100%;
 }
 
-h1 {
-  color: #E50914;
-  text-transform: uppercase;
-  font-size: 48px;
-  font-weight: 800;
-  letter-spacing: 2px;
-}
-
+/* MENU */
 .menu {
   display: flex;
-  gap: 25px;
+  gap: 15px;
   list-style: none;
+  flex-wrap: wrap;
 }
 
 .menu a {
   color: white;
   text-decoration: none;
-  padding: 12px 18px;
+  padding: 10px 14px;
   border-radius: 10px;
-  transition: all 0.3s ease;
+  transition: 0.3s;
 }
 
 .menu a:hover {
   background-color: #E50914;
-  transform: scale(1.05);
 }
 
-
+/* HERO */
 .sitebg {
   height: 60vh;
-  background: linear-gradient(to top, black, transparent), url('pictures/sitebg.jpg') center/cover;
+  width: 100%;
+  background: linear-gradient(to top, black, transparent),
+    url('pictures/sitebg.jpg') center/cover;
   display: flex;
   align-items: flex-end;
-  padding: 50px 80px;
+  padding: 50px 16px;
 }
 
+/* CONTENT */
 .sitebg-content h2 {
-  font-size: 42px;
+  font-size: 36px;
   margin-bottom: 10px;
 }
 
-.hero-content p {
-  max-width: 500px;
-  opacity: 0.8;
-  line-height: 1.6;
+.sitebg-content p {
+  max-width: 600px;
 }
 
-
+/* ARTICLE */
 article {
-  padding: 40px 80px;
+  padding: 40px 16px;
 }
 
 .section-title {
-  font-size: 28px;
-  margin-bottom: 25px;
+  font-size: 26px;
+  margin-bottom: 20px;
 }
 
+/* GRIDS */
 .series,
 .movies {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 25px;
+  gap: 20px;
   list-style: none;
-  margin-bottom: 50px;
 }
 
+/* CARDS */
 .card {
   background: #111;
   border-radius: 20px;
   overflow: hidden;
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease;
   cursor: pointer;
 }
 
 .card:hover {
-  transform: scale(1.05);
+  transform: translateY(-6px);
 }
 
 .card img {
@@ -118,7 +135,7 @@ article {
 .serie_titles {
   font-weight: bold;
   font-size: 18px;
-  margin-bottom: 8px;
+  margin-bottom: 5px;
 }
 
 .title_info {
@@ -128,30 +145,39 @@ article {
 }
 
 .rating {
-  margin-top: 12px;
-  font-size: 14px;
+  margin-top: 10px;
 }
+
 
 footer {
   text-align: center;
-  padding: 30px;
+  padding: 30px 16px;
   border-top: 1px solid rgba(255,255,255,0.08);
   opacity: 0.7;
 }
 
 
-@media (max-width: 768px) {
-  nav,
-  article,
-  .hero {
-    padding: 20px;
+@media (max-width: 900px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .search-box input {
+    width: 100%;
+  }
+
+  .menu {
+    width: 100%;
+    justify-content: flex-start;
   }
 
   h1 {
-    font-size: 32px;
+    font-size: 28px;
   }
 
-  .hero-content h2 {
+  .sitebg-content h2 {
     font-size: 28px;
   }
 }
